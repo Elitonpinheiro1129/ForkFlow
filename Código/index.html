@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForkFlow | Cardápios Digitais Inteligentes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-utensils"></i></span>
+                <span class="logo-text">Fork<span>Flow</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#como-funciona">Como Funciona</a></li>
+                <li><a href="#exemplo-cardapio">Ver na Prática</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#exemplo-cardapio" class="btn btn-primary">Ver Cardápio</a>
+            <div class="mobile-menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container grid">
+                <div class="hero-content">
+                    <h1>Transforme a experiência do seu restaurante com <span>cardápios inteligentes</span>.</h1>
+                    <p>Aumente suas vendas, reduza erros e encante seus clientes com a plataforma de autoatendimento líder para o setor gastronômico.</p>
+                    <div class="hero-btns">
+                        <a href="#exemplo-cardapio" class="btn btn-primary btn-lg">Experimentar Agora</a>
+                        <a href="#como-funciona" class="btn btn-outline btn-lg">Ver como funciona</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tablet com cardápio digital">
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefícios -->
+        <section id="beneficios" class="beneficios bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Por que escolher a ForkFlow?</h2>
+                    <p>Soluções pensadas para otimizar a operação e aumentar a rentabilidade do seu negócio.</p>
+                </div>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <i class="fas fa-bolt icon"></i>
+                        <h3>Agilidade no Atendimento</h3>
+                        <p>Reduza o tempo de espera dos clientes e libere sua equipe para focar no que realmente importa: a hospitalidade.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-chart-line icon"></i>
+                        <h3>Aumento do Ticket Médio</h3>
+                        <p>Sugestões inteligentes de acompanhamentos e promoções que incentivam o consumo de forma natural.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-check-circle icon"></i>
+                        <h3>Zero Erros de Pedido</h3>
+                        <p>Os pedidos vão direto para a cozinha, eliminando falhas de comunicação e desperdícios de insumos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como Funciona -->
+        <section id="como-funciona" class="como-funciona">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Como Funciona</h2>
+                    <p>Implementação rápida e intuitiva para você e seus clientes.</p>
+                </div>
+                <div class="steps grid grid-3">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Aponte o QR Code</h3>
+                        <p>O cliente escaneia o código na mesa com o próprio celular, sem precisar baixar aplicativos.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Faça o Pedido</h3>
+                        <p>Navegação fluida pelo cardápio digital com fotos, descrições detalhadas e opcionais.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Receba na Mesa</h3>
+                        <p>O pedido é impresso na cozinha instantaneamente e servido em tempo recorde.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cardápio em Tela Cheia -->
+        <section id="exemplo-cardapio" class="exemplo-cardapio-full">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Experimente o Cardápio ForkFlow</h2>
+                    <p>Interface moderna, rápida e otimizada para qualquer tela. Simule um pedido abaixo.</p>
+                </div>
+                
+                <div class="cardapio-full-container">
+                    <div class="menu-app-full">
+                        <div class="menu-header-full">
+                            <div class="restaurant-info">
+                                <h3>Bistrô ForkFlow <i class="fas fa-check-circle verified"></i></h3>
+                                <p><i class="fas fa-star"></i> 4.9 (120 avaliações) • Aberto agora</p>
+                            </div>
+                            <div class="cart-status">
+                                <div class="cart-icon-full">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <span id="cart-count">0</span>
+                                </div>
+                                <div class="cart-total-info">
+                                    <span>Seu Pedido</span>
+                                    <strong>R$ <span id="cart-total">0,00</span></strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-body-full">
+                            <aside class="menu-sidebar">
+                                <h4>Categorias</h4>
+                                <ul id="category-list">
+                                    <li class="category-btn active" data-category="all"><i class="fas fa-th-large"></i> Todos</li>
+                                    <li class="category-btn" data-category="destaques"><i class="fas fa-fire"></i> Destaques</li>
+                                    <li class="category-btn" data-category="entradas"><i class="fas fa-utensils"></i> Entradas</li>
+                                    <li class="category-btn" data-category="pratos"><i class="fas fa-hamburger"></i> Pratos Principais</li>
+                                    <li class="category-btn" data-category="bebidas"><i class="fas fa-wine-glass"></i> Bebidas</li>
+                                </ul>
+                            </aside>
+
+                            <div class="menu-content-full">
+                                <div class="grid grid-2" id="menu-grid">
+                                    <!-- Burger Premium -->
+                                    <div class="menu-item-full" data-category="destaques pratos" data-id="1" data-name="Burger Premium" data-price="38.90">
+                                        <div class="item-img-full" style="background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80')"></div>
+                                        <div class="item-details">
+                                            <div class="item-header">
+                                                <h4>Burger Premium</h4>
+                                                <span class="price">R$ 38,90</span>
+                                            </div>
+                                            <p>Pão brioche selado na manteiga, blend de 180g de carne angus, queijo cheddar derretido, bacon crocante e maionese da casa.</p>
+                                            <button class="add-btn-full"><i class="fas fa-plus"></i> Adicionar ao Pedido</button>
+                                        </div>
+                                    </div>
+                                    <!-- Pizza Artesanal -->
+                                    <div class="menu-item-full" data-category="destaques pratos" data-id="2" data-name="Pizza Artesanal" data-price="54.00">
+                                        <div class="item-img-full" style="background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80')"></div>
+                                        <div class="item-details">
+                                            <div class="item-header">
+                                                <h4>Pizza Artesanal</h4>
+                                                <span class="price">R$ 54,00</span>
+                                            </div>
+                                            <p>Massa de longa fermentação, molho de tomate pelati italiano, mozzarella de búfala, manjericão fresco e azeite extra virgem.</p>
+                                            <button class="add-btn-full"><i class="fas fa-plus"></i> Adicionar ao Pedido</button>
+                                        </div>
+                                    </div>
+                                    <!-- Bruschetta -->
+                                    <div class="menu-item-full" data-category="entradas" data-id="5" data-name="Bruschetta Italiana" data-price="24.90">
+                                        <div class="item-img-full" style="background-image: url('https://images.unsplash.com/photo-1572656631137-7935297eff55?auto=format&fit=crop&w=400&q=80')"></div>
+                                        <div class="item-details">
+                                            <div class="item-header">
+                                                <h4>Bruschetta Italiana</h4>
+                                                <span class="price">R$ 24,90</span>
+                                            </div>
+                                            <p>Pão italiano tostado, tomates cereja marinados em azeite de oliva, alho, manjericão e finalizado com creme de balsâmico.</p>
+                                            <button class="add-btn-full"><i class="fas fa-plus"></i> Adicionar ao Pedido</button>
+                                        </div>
+                                    </div>
+                                    <!-- Salmão Grelhado -->
+                                    <div class="menu-item-full" data-category="pratos" data-id="3" data-name="Salmão Grelhado" data-price="62.50">
+                                        <div class="item-img-full" style="background-image: url('https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=400&q=80')"></div>
+                                        <div class="item-details">
+                                            <div class="item-header">
+                                                <h4>Salmão Grelhado</h4>
+                                                <span class="price">R$ 62,50</span>
+                                            </div>
+                                            <p>Filé de salmão grelhado com crosta de ervas, acompanhado de risoto de limão siciliano e aspargos frescos.</p>
+                                            <button class="add-btn-full"><i class="fas fa-plus"></i> Adicionar ao Pedido</button>
+                                        </div>
+                                    </div>
+                                    <!-- Soda Italiana -->
+                                    <div class="menu-item-full" data-category="bebidas" data-id="4" data-name="Soda Italiana" data-price="12.50">
+                                        <div class="item-img-full" style="background-image: url('https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=400&q=80')"></div>
+                                        <div class="item-details">
+                                            <div class="item-header">
+                                                <h4>Soda Italiana</h4>
+                                                <span class="price">R$ 12,50</span>
+                                            </div>
+                                            <p>Bebida refrescante feita com água gaseificada, xarope de maçã verde premium, gelo e fatias de fruta fresca.</p>
+                                            <button class="add-btn-full"><i class="fas fa-plus"></i> Adicionar ao Pedido</button>
+                                        </div>
+                                    </div>
+                                    <!-- Vinho Tinto -->
+                                    <div class="menu-item-full" data-category="bebidas" data-id="6" data-name="Vinho Tinto Taça" data-price="28.00">
+                                        <div class="item-img-full" style="background-image: url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=400&q=80')"></div>
+                                        <div class="item-details">
+                                            <div class="item-header">
+                                                <h4>Vinho Tinto Taça</h4>
+                                                <span class="price">R$ 28,00</span>
+                                            </div>
+                                            <p>Taça de vinho tinto seco selecionado, perfeito para acompanhar pratos de carne vermelha ou massas intensas.</p>
+                                            <button class="add-btn-full"><i class="fas fa-plus"></i> Adicionar ao Pedido</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-footer-full">
+                            <div class="footer-info">
+                                <p><i class="fas fa-info-circle"></i> Os pedidos são enviados diretamente para a cozinha do restaurante.</p>
+                            </div>
+                            <button class="btn-checkout-full">Finalizar Pedido e Enviar para Cozinha</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recursos -->
+        <section id="recursos" class="recursos bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Recursos Poderosos</h2>
+                    <p>Tudo o que você precisa para gerenciar seu restaurante na palma da mão.</p>
+                </div>
+                <div class="grid grid-2">
+                    <div class="recurso-item">
+                        <div class="recurso-icon"><i class="fas fa-edit"></i></div>
+                        <div>
+                            <h3>Edição em Tempo Real</h3>
+                            <p>Altere preços, adicione pratos ou pause itens esgotados instantaneamente sem custos de impressão.</p>
+                        </div>
+                    </div>
+                    <div class="recurso-item">
+                        <div class="recurso-icon"><i class="fas fa-language"></i></div>
+                        <div>
+                            <h3>Multilinguagem</h3>
+                            <p>Tradução automática para atender turistas e clientes estrangeiros com excelência.</p>
+                        </div>
+                    </div>
+                    <div class="recurso-item">
+                        <div class="recurso-icon"><i class="fas fa-wallet"></i></div>
+                        <div>
+                            <h3>Pagamento Integrado</h3>
+                            <p>Permita que o cliente feche a conta e pague via PIX ou Cartão direto pelo celular.</p>
+                        </div>
+                    </div>
+                    <div class="recurso-item">
+                        <div class="recurso-icon"><i class="fas fa-database"></i></div>
+                        <div>
+                            <h3>Gestão de Dados</h3>
+                            <p>Relatórios detalhados sobre os pratos mais vendidos e horários de maior pico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estatísticas -->
+        <section class="stats">
+            <div class="container grid grid-4">
+                <div class="stat-item">
+                    <div class="stat-number">+25%</div>
+                    <p>Aumento nas Vendas</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">-30%</div>
+                    <p>Tempo de Espera</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <p>Restaurantes Atendidos</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <p>Satisfação dos Clientes</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planos -->
+        <section id="planos" class="planos">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossos Planos</h2>
+                    <p>Escolha a opção ideal para o tamanho do seu negócio.</p>
+                </div>
+                <div class="grid grid-3">
+                    <div class="price-card">
+                        <h3>Essencial</h3>
+                        <div class="price">R$ 149<span>/mês</span></div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Cardápio QR Code</li>
+                            <li><i class="fas fa-check"></i> Até 50 itens</li>
+                            <li><i class="fas fa-check"></i> Suporte via E-mail</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Pagamento no Celular</li>
+                        </ul>
+                        <a href="#exemplo-cardapio" class="btn btn-outline full-width">Assinar Agora</a>
+                    </div>
+                    <div class="price-card featured">
+                        <div class="badge">Mais Popular</div>
+                        <h3>Premium</h3>
+                        <div class="price">R$ 299<span>/mês</span></div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Cardápio QR Code</li>
+                            <li><i class="fas fa-check"></i> Itens Ilimitados</li>
+                            <li><i class="fas fa-check"></i> Pagamento no Celular</li>
+                            <li><i class="fas fa-check"></i> Suporte 24/7</li>
+                        </ul>
+                        <a href="#exemplo-cardapio" class="btn btn-primary full-width">Assinar Agora</a>
+                    </div>
+                    <div class="price-card">
+                        <h3>Enterprise</h3>
+                        <div class="price">Sob Consulta</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Múltiplas Unidades</li>
+                            <li><i class="fas fa-check"></i> Integração com ERP</li>
+                            <li><i class="fas fa-check"></i> Gestor de Conta Dedicado</li>
+                            <li><i class="fas fa-check"></i> White Label</li>
+                        </ul>
+                        <a href="#exemplo-cardapio" class="btn btn-outline full-width">Falar com Consultor</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Perguntas Frequentes</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">Preciso comprar tablets para todas as mesas? <i class="fas fa-chevron-down"></i></div>
+                        <div class="faq-answer">Não! A ForkFlow funciona no próprio celular do cliente através de QR Codes impressos nas mesas.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Como é feita a integração com a cozinha? <i class="fas fa-chevron-down"></i></div>
+                        <div class="faq-answer">Os pedidos podem ser enviados para impressoras térmicas já existentes ou visualizados em uma tela (KDS) na cozinha.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Posso cancelar o plano a qualquer momento? <i class="fas fa-chevron-down"></i></div>
+                        <div class="faq-answer">Sim, nossos planos mensais não possuem fidelidade. Você pode cancelar quando desejar.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="cta-final">
+            <div class="container">
+                <h2>Pronto para levar seu restaurante ao próximo nível?</h2>
+                <p>Junte-se a centenas de estabelecimentos que já modernizaram seu atendimento.</p>
+                <a href="#exemplo-cardapio" class="btn btn-light btn-lg">Começar Agora</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content grid grid-4">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon"><i class="fas fa-utensils"></i></span>
+                        <span class="logo-text">Fork<span>Flow</span></span>
+                    </div>
+                    <p>Cardápios digitais inteligentes para a nova era da gastronomia.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#beneficios">Benefícios</a></li>
+                        <li><a href="#como-funciona">Como Funciona</a></li>
+                        <li><a href="#recursos">Recursos</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Newsletter</h4>
+                    <p>Receba dicas de gestão e tecnologia.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ForkFlow. Todos os direitos reservados. Projeto escolar.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
